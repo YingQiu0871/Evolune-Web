@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evolune — Medication Planning &amp; Secure Health Data Backup</title>
+    <meta name="description" content="Evolune is an open-source Android and Wear OS application for personal medication planning, treatment records, health-related calculations, and user-controlled encrypted backup.">
+    <link rel="canonical" href="https://evolune.yingqiu.me/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://evolune.yingqiu.me/">
+    <meta property="og:title" content="Evolune — Medication Planning &amp; Secure Health Data Backup">
+    <meta property="og:description" content="A calm, local-first Android and Wear OS tool for medication planning, records, health-related calculations, and user-controlled backup.">
+    <meta property="og:image" content="https://evolune.yingqiu.me/assets/evolune-logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Evolune — Medication Planning &amp; Secure Health Data Backup">
+    <meta name="twitter:description" content="A calm, local-first Android and Wear OS tool for medication planning, records, health-related calculations, and user-controlled backup.">
+    <meta name="twitter:image" content="https://evolune.yingqiu.me/assets/evolune-logo.png">
+    <link rel="icon" href="/assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/assets/site.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="Evolune home">
+          <img class="brand-mark" src="/assets/evolune-logo.png" alt="Evolune white crescent moon logo">
+          <span class="brand-name">Evolune</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="active" aria-current="page" href="/">Home</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+          <a href="https://github.com/YingQiu0871/Evolune" rel="noreferrer">GitHub</a>
+        </nav>
+      </header>
+
+      <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Open-source Android &amp; Wear OS application</p>
+            <h1 id="hero-title">Medication planning,<br><em>with room to breathe.</em></h1>
+            <p class="hero-lede">Evolune helps people organize personal medication plans, keep treatment records, explore health-related calculations, and carry their own data forward.</p>
+            <p class="hero-support">Built around local ownership and deliberate, user-controlled data actions.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#features">Explore Evolune <span aria-hidden="true">↓</span></a>
+              <a class="button button-secondary" href="/privacy/">Read the Privacy Policy</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Evolune logo artwork">
+            <div class="art-glow"></div>
+            <img src="/assets/evolune-logo.png" alt="White crescent moon on a pastel pink, lavender, and pale blue gradient">
+            <span class="orbit orbit-one" aria-hidden="true"></span>
+            <span class="orbit orbit-two" aria-hidden="true"></span>
+          </div>
+        </section>
+
+        <section class="quiet-intro" aria-label="Evolune overview">
+          <p class="section-kicker">A personal tool, not a portal</p>
+          <p>Evolune keeps its center of gravity on the device. It is designed to make recurring medication routines and personal records easier to understand, while leaving important decisions and data movement in the user’s hands.</p>
+        </section>
+
+        <section id="features" class="section-block" aria-labelledby="features-title">
+          <div class="section-heading">
+            <p class="section-kicker">What it does</p>
+            <h2 id="features-title">Simple surfaces for<br><em>everyday continuity.</em></h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card feature-card-pink">
+              <span class="feature-number">01</span>
+              <h3>Medication planning</h3>
+              <p>Create and manage personal medication schedules, dose plans, reminders, and dose records in one place.</p>
+            </article>
+            <article class="feature-card feature-card-blue">
+              <span class="feature-number">02</span>
+              <h3>Health Connect</h3>
+              <p>When enabled, Evolune can read body-weight data from Android Health Connect after explicit user authorization.</p>
+              <span class="feature-note">READ_WEIGHT only · foreground and user-controlled</span>
+            </article>
+            <article class="feature-card feature-card-lavender">
+              <span class="feature-number">03</span>
+              <h3>Encrypted backups</h3>
+              <p>Backups are encrypted on the device with a passphrase before they leave it, so the user remains responsible for the key to restoration.</p>
+              <span class="feature-note">AES-256-GCM · PBKDF2-HMAC-SHA256</span>
+            </article>
+            <article class="feature-card feature-card-white">
+              <span class="feature-number">04</span>
+              <h3>Wear OS companion</h3>
+              <p>View medication information and record supported dose actions from a connected Wear OS device.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="drive-panel" aria-labelledby="drive-title">
+          <div class="drive-icon" aria-hidden="true">↗</div>
+          <div>
+            <p class="section-kicker">Optional, by design</p>
+            <h2 id="drive-title">Why Evolune requests Google Drive access</h2>
+            <p>Google Drive access is optional and is used only when the user manually chooses to back up or restore Evolune data. Evolune uses Google’s <code>appDataFolder</code>, a private application-specific storage area. It does not browse, read, or modify unrelated files in the user’s Google Drive.</p>
+            <a class="text-link" href="/privacy/">Read our Privacy Policy <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <section class="about-grid" aria-labelledby="about-title">
+          <div>
+            <p class="section-kicker">Made to be inspectable</p>
+            <h2 id="about-title">Open source,<br><em>quietly serious.</em></h2>
+          </div>
+          <div class="about-copy">
+            <p>Evolune is an open-source Android and Wear OS project maintained by Yingqiu. The application does not run a developer backend that stores users’ medication records or Google Drive backup contents.</p>
+            <a class="button button-secondary" href="https://github.com/YingQiu0871/Evolune" rel="noreferrer">View the source on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <section class="contact-panel" aria-labelledby="contact-title">
+          <div>
+            <p class="section-kicker">Questions or feedback?</p>
+            <h2 id="contact-title">Keep in touch.</h2>
+          </div>
+          <a class="contact-email" href="mailto:guyuning2002@gmail.com">guyuning2002@gmail.com <span aria-hidden="true">↗</span></a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <span class="footer-dot" aria-hidden="true"></span>
+          <span>© 2026 Evolune</span>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="https://github.com/YingQiu0871/Evolune" rel="noreferrer">GitHub</a>
+          <a href="mailto:guyuning2002@gmail.com">Contact</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
