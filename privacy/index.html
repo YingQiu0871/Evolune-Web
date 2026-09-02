@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Evolune Privacy Policy</title>
-    <meta name="description" content="The Evolune Privacy Policy explains local data storage, optional Health Connect access, manual Google Drive backups, encryption, and user choices.">
+    <meta name="description" content="The Evolune Privacy Policy explains what stays on your device, how optional Health Connect and Google Drive features work, how backups are encrypted, and which choices remain yours.">
     <link rel="canonical" href="https://evolune.yingqiu.me/privacy/">
+    <link rel="alternate" hreflang="en" href="https://evolune.yingqiu.me/privacy/">
+    <link rel="alternate" hreflang="zh-CN" href="https://evolune.yingqiu.me/zh/privacy/">
+    <link rel="alternate" hreflang="x-default" href="https://evolune.yingqiu.me/privacy/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://evolune.yingqiu.me/privacy/">
     <meta property="og:title" content="Evolune Privacy Policy">
-    <meta property="og:description" content="How Evolune handles local application data, optional Health Connect access, and manual encrypted backups.">
+    <meta property="og:description" content="A clear explanation of how Evolune handles local application data, optional Health Connect access, manual Google Drive backups, and encryption.">
     <meta property="og:image" content="https://evolune.yingqiu.me/assets/evolune-logo.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Evolune Privacy Policy">
-    <meta name="twitter:description" content="How Evolune handles local application data, optional Health Connect access, and manual encrypted backups.">
+    <meta name="twitter:description" content="A clear explanation of how Evolune handles local application data, optional Health Connect access, manual Google Drive backups, and encryption.">
     <meta name="twitter:image" content="https://evolune.yingqiu.me/assets/evolune-logo.png">
     <link rel="icon" href="/assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="/assets/site.css">
@@ -28,8 +31,9 @@
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="/">Home</a>
-          <a class="active" aria-current="page" href="/privacy/">Privacy</a>
-          <a href="/terms/">Terms</a>
+          <a class="active" aria-current="page" href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a class="language-switch" href="/zh/privacy/" lang="zh-CN">中文</a>
           <a href="https://github.com/YingQiu0871/Evolune" rel="noreferrer">GitHub</a>
         </nav>
       </header>
@@ -39,7 +43,7 @@
           <p class="eyebrow">Evolune / Legal</p>
           <h1>Evolune<br><em>Privacy Policy</em></h1>
           <p class="legal-date">Last updated: August 28, 2026</p>
-          <p class="legal-lede">This policy describes what Evolune stores on your device, what it can access when you choose to connect Android Health Connect or Google Drive, and what remains under your control.</p>
+          <p class="legal-lede">This policy explains, in plain language, what Evolune stores on your device, what it can access when you choose to connect Android Health Connect or Google Drive, how backups are protected, and which decisions remain under your control.</p>
         </header>
 
         <div class="legal-layout">
@@ -58,80 +62,81 @@
             <section id="overview">
               <p class="legal-number">01</p>
               <h2>Overview</h2>
-              <p>Evolune is a personal information and tracking tool for Android and Wear OS. It is designed around local storage and user-initiated data actions. Evolune does not operate a developer backend that stores users’ medication records, health data, or Google Drive backup contents.</p>
+              <p>Evolune is a personal information and tracking tool for Android and Wear OS. Its everyday design starts with local storage and with data actions that you deliberately initiate, rather than with a developer-operated account or data warehouse.</p>
+              <p>Evolune does not operate a developer backend that stores users’ medication records, health data, or copies of their Google Drive backup contents.</p>
             </section>
 
             <section id="stored-data">
               <p class="legal-number">02</p>
               <h2>Data stored by Evolune</h2>
-              <p>Depending on the features you use, Evolune may store the following on your device:</p>
+              <p>Depending on the features you choose to use, Evolune may store the following information locally on your device:</p>
               <ul>
-                <li>Medication plans and dose schedules.</li>
-                <li>Dose records and related application records.</li>
-                <li>Body weight used for supported health-related calculations.</li>
+                <li>Medication plans, schedules, dose details, and reminders.</li>
+                <li>Dose records and other records you create inside the application.</li>
+                <li>Body-weight information used for supported health-related calculations.</li>
                 <li>Supported settings, application preferences, and display choices.</li>
               </ul>
-              <p>This information is primarily stored locally. Evolune does not sell personal or health data and does not use Google user data for advertising.</p>
+              <p>This information is primarily stored locally so that the application can provide its core features without requiring an Evolune-operated account. Evolune does not sell personal or health data, and it does not use Google user data for advertising.</p>
             </section>
 
             <section id="health-connect">
               <p class="legal-number">03</p>
               <h2>Health Connect</h2>
-              <p>Health Connect integration is optional and requires explicit user authorization. Evolune requests <code>READ_WEIGHT</code> only.</p>
-              <p>When the feature is enabled and authorized, Evolune may read the latest valid body-weight observation from the previous 30 days. Evolune does not write body weight to Health Connect, does not write or export medication records to Health Connect, and does not perform background Health Connect synchronization.</p>
+              <p>Health Connect integration is optional and begins only after you explicitly grant permission. Evolune requests the <code>READ_WEIGHT</code> permission only.</p>
+              <p>When the feature is enabled and authorized, Evolune may read the latest valid body-weight observation from the previous 30 days to support the relevant in-app calculations. Evolune does not write body weight to Health Connect, does not write or export medication records to Health Connect, and does not perform background synchronization.</p>
             </section>
 
             <section id="google-drive">
               <p class="legal-number">04</p>
               <h2>Google Drive backup and restore</h2>
-              <p>Evolune uses Google Drive only for user-initiated backup and restore. Backups and restores are manually started by the user; Evolune does not continuously synchronize application data with Google Drive.</p>
-              <p>Evolune requests access only to Google Drive’s <code>appDataFolder</code> scope. This is an application-specific storage area. Evolune does not browse, read, or modify unrelated files in your Google Drive.</p>
-              <p>Evolune does not operate a developer backend that receives copies of users’ Google Drive backup contents.</p>
+              <p>Evolune uses Google Drive only when you manually choose to create a backup or restore one. Nothing in this feature requires continuous synchronization, and Evolune does not silently copy your application data to Google Drive in the background.</p>
+              <p>Evolune requests access only to Google Drive’s <code>appDataFolder</code> scope. This is a private, application-specific storage area intended for Evolune’s own files. Evolune does not browse, read, or modify unrelated files in your Google Drive.</p>
+              <p>Evolune does not operate a developer backend that receives or stores copies of your Google Drive backup contents.</p>
             </section>
 
             <section id="encryption">
               <p class="legal-number">05</p>
               <h2>Backup encryption</h2>
-              <p>Backup data is encrypted on your device before upload. The current backup format uses:</p>
+              <p>Backup data is encrypted on your device before it is uploaded. This means the backup is prepared locally first, and the current format uses the following:</p>
               <dl class="spec-list">
                 <div><dt>Encryption</dt><dd>AES-256-GCM</dd></div>
                 <div><dt>Password-based key derivation</dt><dd>PBKDF2-HMAC-SHA256</dd></div>
                 <div><dt>Default iterations</dt><dd>600,000</dd></div>
               </dl>
-              <p>The backup passphrase is provided by you. Evolune does not have a service capable of recovering a forgotten backup passphrase. Losing the passphrase may make an encrypted backup unavailable for restoration.</p>
+              <p>You provide the backup passphrase. Evolune does not have a service capable of recovering a forgotten passphrase, so please keep it somewhere safe and separate from the backup itself. Losing it may make an encrypted backup unavailable for restoration.</p>
             </section>
 
             <section id="oauth">
               <p class="legal-number">06</p>
               <h2>Google OAuth data</h2>
-              <p>Evolune uses Google’s authorization APIs to request the Drive <code>appDataFolder</code> permission. Evolune does not operate a backend that stores Google OAuth refresh tokens and does not request offline backend access.</p>
-              <p>Disconnecting Google from Evolune clears the current Evolune authorization session. It does not delete existing backup files and does not automatically revoke your Google account’s OAuth grant.</p>
+              <p>Evolune uses Google’s authorization APIs to request the Drive <code>appDataFolder</code> permission when you choose to use backup or restore. Evolune does not operate a backend that stores Google OAuth refresh tokens, and it does not request offline backend access for a server.</p>
+              <p>Disconnecting Google from Evolune clears the current authorization session held by the application. It does not delete existing backup files, and it does not automatically revoke the OAuth grant from your Google account; those actions are separate choices you can make through the relevant controls.</p>
             </section>
 
             <section id="sharing">
               <p class="legal-number">07</p>
               <h2>Data sharing</h2>
-              <p>Evolune does not sell users’ personal or health data and does not use Google user data for advertising. Evolune does not operate a developer backend to receive copies of users’ Google Drive backup contents.</p>
-              <p>Android, Google Drive, Health Connect, and other infrastructure providers may process information according to their own products, policies, and permissions. Their services are not operated by Evolune.</p>
+              <p>Evolune does not sell users’ personal or health data and does not use Google user data for advertising. It also does not operate a developer backend to receive copies of users’ Google Drive backup contents.</p>
+              <p>Android, Google Drive, Health Connect, and other infrastructure providers may process information according to their own products, privacy policies, and permission systems. Those services are operated independently and are not controlled by Evolune.</p>
             </section>
 
             <section id="retention">
               <p class="legal-number">08</p>
               <h2>Data retention and deletion</h2>
-              <p>You may remove local Evolune data by using the application’s available data-management functions or by uninstalling the application.</p>
-              <p>Google Drive backups can be removed through Evolune’s supported backup-management functionality where available, or through applicable Google account and application-data controls. Disconnecting authorization alone does not delete existing backup files.</p>
+              <p>You may remove local Evolune data by using the application’s available data-management functions or by uninstalling the application. The exact steps may vary slightly by Android version and device.</p>
+              <p>Google Drive backups can be removed through Evolune’s supported backup-management functionality where available, or through the applicable Google account and application-data controls. Disconnecting authorization alone does not delete existing backup files.</p>
             </section>
 
             <section id="network">
               <p class="legal-number">09</p>
               <h2>Network services</h2>
-              <p>Evolune may use network access for user-initiated Google Drive backup and restore, Google authorization, and update information from GitHub Releases. Evolune does not send medication records or health data to an Evolune-operated server.</p>
+              <p>Evolune may use network access when you initiate a Google Drive backup or restore, complete Google authorization, or request update information from GitHub Releases. These connections support the feature you selected; Evolune does not send medication records or health data to an Evolune-operated server.</p>
             </section>
 
             <section id="security">
               <p class="legal-number">10</p>
               <h2>Security</h2>
-              <p>Evolune is designed to keep application data local where possible and to encrypt backups before upload. No software or transmission method can be guaranteed to be completely secure. Keep your device, Google account, and backup passphrase protected.</p>
+              <p>Evolune is designed to keep application data local where possible and to encrypt backups before upload. Even so, no software, device, account, or transmission method can be guaranteed to be completely secure. Keeping your device, Google account, and backup passphrase protected remains an important part of protecting your information.</p>
             </section>
 
             <section id="children">
@@ -143,13 +148,13 @@
             <section id="changes">
               <p class="legal-number">12</p>
               <h2>Changes to this policy</h2>
-              <p>This policy may be updated when Evolune’s features, data practices, or legal requirements change. The “Last updated” date at the top of this page identifies the current version.</p>
+              <p>This policy may be updated when Evolune’s features, data practices, or legal requirements change. The “Last updated” date at the top of this page identifies the current version, so you can quickly see whether the policy has been revised since your last visit.</p>
             </section>
 
             <section id="contact">
               <p class="legal-number">13</p>
               <h2>Contact</h2>
-              <p>For privacy questions about Evolune, contact <a class="text-link" href="mailto:guyuning2002@gmail.com">guyuning2002@gmail.com <span aria-hidden="true">↗</span></a>.</p>
+              <p>If you have a question about this policy, a concern about how Evolune handles information, or a request for clarification, please contact <a class="text-link" href="mailto:hello@evolune.yingqiu.me">hello@evolune.yingqiu.me <span aria-hidden="true">↗</span></a>.</p>
             </section>
           </article>
         </div>
@@ -161,7 +166,8 @@
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
           <a href="https://github.com/YingQiu0871/Evolune" rel="noreferrer">GitHub</a>
-          <a href="mailto:guyuning2002@gmail.com">Contact</a>
+          <a class="language-switch" href="/zh/privacy/" lang="zh-CN">中文</a>
+          <a href="mailto:hello@evolune.yingqiu.me">Contact</a>
         </nav>
       </footer>
     </div>
