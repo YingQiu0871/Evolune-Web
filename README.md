@@ -8,13 +8,15 @@ Independent public website for Evolune, a local-first Android and Wear OS applic
 - `/privacy/` — Privacy Policy
 - `/terms/` — Terms of Service
 
-The site is intentionally plain HTML and CSS so it can be audited, hosted on GitHub Pages, and served without a build step, database, analytics, cookies, or login.
+The site is intentionally plain HTML and CSS so it can be audited, hosted anywhere, and served without a build step, database, analytics, cookies, or login.
 
 ## Deployment
 
-GitHub Pages is configured through `.github/workflows/deploy-pages.yml`. The custom domain is recorded in `CNAME` as `evolune.yingqiu.me`.
+Pushes to `main` are rsynced to the VPS by `.github/workflows/deploy.yml` (target `/var/www/evolune`, served by Caddy at `evolune.yingqiu.me` behind Cloudflare). Server and Caddy setup live in the `yuning-gu.github.io` repository under `deploy/`.
 
-Before Google OAuth verification, confirm that the GitHub Pages custom-domain setting is active and that the `evolune.yingqiu.me` DNS record points to the GitHub Pages hostname shown by GitHub for this repository.
+Required repository secrets: `DEPLOY_HOST`, `DEPLOY_USER` (`deployer`), `DEPLOY_SSH_KEY`, optional `DEPLOY_PORT`. Optional variable `DEPLOY_PATH` overrides the target directory.
+
+The website was previously hosted on GitHub Pages; the `CNAME` file is a leftover and is not deployed.
 
 Support contact: guyuning2002@gmail.com
 
